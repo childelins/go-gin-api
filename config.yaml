@@ -1,0 +1,7 @@
+host: '172.30.194.250'
+port: 8848
+namespace: '98bf34d9-1b9a-42b4-a41b-27b3cb2b5a67'
+user: 'nacos'
+password: 'nacos'
+dataid: 'go-gin-api.json'
+group: 'dev'

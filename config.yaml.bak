@@ -1,0 +1,36 @@
+name: 'go-gin-api'
+host: '192.168.10.39'
+port: 8080
+tags:
+  - 'go'
+  - 'web'
+  - 'api'
+run_mode: debug # release
+log_level: debug
+read_timeout: 60
+write_timeout: 60
+context_timeout: 60
+
+mysql:
+  host: '127.0.0.1'
+  port: 3306
+  database: ''
+  username: ''
+  password: ''
+
+jwt:
+  key: 'CxwSsVjARvtn4Z0inHU4NZofmfjjcL4T'
+  expire: 7200
+  issuer: 'api'
+
+consul:
+  host: '127.0.0.1'
+  port: 8500
+
+jaeger:
+  name: 'go-gin-api'
+  host: '127.0.0.1'
+  port: 6831
+
+lecturer_srv:
+  name: 'go-grpc-srv'

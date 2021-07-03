@@ -1,0 +1,25 @@
+syntax = "proto3";
+option go_package = ".;proto";
+
+service Lecturer {
+    rpc GetLecturerList(LecturerListRequest) returns (LecturerListResponse); // 讲师列表
+}
+
+message LecturerListRequest {
+    uint32 page = 1;   
+    uint32 limit = 2;
+    string name = 3;
+}
+
+message LecturerListResponse {
+    int32 total = 1;
+    repeated LecturerInfo data = 2;
+}
+
+message LecturerInfo {
+    int32 lecturerId = 1;
+    string name = 2;
+    string avatar = 3;
+    string title = 4;
+    string createdAt = 5;
+}
